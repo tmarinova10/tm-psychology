@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Психологична Практика - Теодора Маринова</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f0fdf4; color: #333; padding-top: 5rem; }
+        .section-icon { color: #166534; }
+        .contact-card { background: linear-gradient(135deg, #fce7f3, #d1fae5); border: 1px solid #a7f3d0; }
+        .sticky-nav { background: #d1fae5; }
+        .scroll-offset { scroll-margin-top: 5rem; }
+        .lang-btn { cursor: pointer; padding: 2px 8px; border-radius: 4px; transition: all 0.2s; font-weight: bold; }
+        .lang-btn.active { background: #166534; color: white; }
+    </style>
+</head>
+<body class="bg-fuchsia-50 text-gray-800 antialiased">
+    <div id="top" class="absolute top-0"></div>
+
+    <!-- Navigation Menu -->
+    <nav class="sticky-nav fixed top-0 left-0 right-0 z-50 shadow-lg border-b border-green-300">
+        <div class="container mx-auto px-4 py-4 flex flex-wrap justify-center md:justify-between items-center text-sm md:text-base">
+            <a href="#top" id="nav-brand" class="font-bold text-lg text-green-800 hidden md:block hover:text-green-600 transition" data-bg="Т. Маринова" data-en="T. Marinova">Т. Маринова</a>
+            
+            <div class="flex flex-wrap justify-center space-x-4 sm:space-x-6">
+                <a href="#who-i-am" class="text-gray-700 hover:text-green-700 font-medium" data-bg="Коя съм аз" data-en="About me">Коя съм аз</a>
+                <a href="#expertise" class="text-gray-700 hover:text-green-700 font-medium" data-bg="Квалификации" data-en="Expertise">Квалификации</a>
+                <a href="#what-is-gestalt" class="text-gray-700 hover:text-green-700 font-medium" data-bg="Какво е гещалт?" data-en="What is Gestalt?">Какво е гещалт?</a> 
+                <a href="#services" class="text-gray-700 hover:text-green-700 font-medium" data-bg="Полезна съм с" data-en="Services">Полезна съм с</a>
+                <a href="#articles" class="text-gray-700 hover:text-green-700 font-medium" data-bg="Статии" data-en="Articles">Статии</a>
+                <a href="#contact" class="text-gray-700 hover:text-green-700 font-medium" data-bg="Контакти" data-en="Contact">Контакти</a>
+            </div>
+
+            <div class="flex space-x-1 ml-4">
+                <span onclick="setLanguage('bg')" id="btn-bg" class="lang-btn active">BG</span>
+                <span class="text-gray-400">|</span>
+                <span onclick="setLanguage('en')" id="btn-en" class="lang-btn">EN</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="relative h-[55vh] md:h-[70vh] flex items-center justify-center text-center" style="background-color: #d1fae5;">
+        <div class="relative z-10 px-4 pt-16">
+            <img src="i.jpg" class="mx-auto w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-xl border-4 border-white mb-6" onerror="this.src='https://placehold.co/320x320/f9a8d4/831843?text=TM';">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-800" data-bg="Теодора Маринова" data-en="Teodora Marinova">Теодора Маринова</h1>
+            <p class="text-xl md:text-2xl font-light italic text-gray-700" data-bg="Психолог и Гещалт-консултант" data-en="Psychologist and Gestalt consultant">Психолог и Гещалт-консултант</p>
+            <p class="text-lg italic text-gray-600 mt-2" data-bg='"Първата стъпка към промяната е осъзнаването."' data-en='"The first step towards change is awareness."'>"Първата стъпка към промяната е осъзнаването."</p>
+            <div class="mt-6">
+                <a href="#contact" class="inline-block px-8 py-3 bg-white text-gray-800 rounded-full font-bold shadow-xl hover:bg-gray-200 transition" data-bg="Свържете се с мен" data-en="Get in touch">Свържете се с мен</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 max-w-5xl">
+
+        <!-- Who I Am Section -->
+        <section id="who-i-am" class="mb-16 md:mb-24 text-center pt-8 scroll-offset">
+            <h2 class="text-2xl md:text-4xl font-bold mb-8 text-green-800" data-bg="Коя съм аз и как мога да Ви помогна?" data-en="Who am I and how can I help?">Коя съм аз и как мога да Ви помогна?</h2>
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-xl">
+                <p class="text-lg leading-relaxed mb-8" data-bg="Здравейте, аз съм Теодора Маринова и вярвам, че всеки заслужава да живее в хармония със себе си и с другите. Като психолог, моята мисия е да Ви подкрепям в търсенето на по-добро разбиране на Вашите мисли, чувства и поведения, за да можете да се справите с предизвикателствата и да постигнете желаната промяна." data-en="Hello, I am Teodora Marinova and I believe that everyone deserves to live in harmony with themselves and others. As a psychologist, my mission is to support you in seeking a better understanding of your thoughts, feelings, and behaviors so that you can cope with challenges and achieve desired change.">
+                    Здравейте, аз съм Теодора Маринова и вярвам, че всеки заслужава да живее в хармония със себе си и с другите. Като психолог, моята мисия е да Ви подкрепям в търсенето на по-добро разбиране на Вашите мисли, чувства и поведения, за да можете да се справите с предизвикателствата и да постигнете желаната промяна.
+                </p>
+                <p class="text-lg leading-relaxed" data-bg="Моята работа е изградена върху принципите на индивидуалния подход и уважението към Вашия личен път. Вярвам, че Вие сте най-добрият експерт по собствения си живот, а аз съм тук, за да Ви предоставя инструментите и подкрепата, от които се нуждаете, за да разкриете пълния си потенциал." data-en="My work is built on the principles of an individual approach and respect for your personal path. I believe that you are the best expert on your own life, and I am here to provide you with the tools and support you need to reach your full potential.">
+                    Моята работа е изградена върху принципите на <strong>индивидуалния подход</strong> и <strong>уважението към Вашия личен път</strong>. Вярвам, че Вие сте най-добрият експерт по собствения си живот, а аз съм тук, за да Ви предоставя инструментите и подкрепата, от които се нуждаете, за да разкриете пълния си потенциал.
+                </p>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="mb-16 md:mb-24 pt-8 scroll-offset">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-8 text-green-800" data-bg="Моята експертиза и квалификации" data-en="My Expertise and Qualifications">Моята експертиза и квалификации</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-4 text-green-800" data-bg="Образование" data-en="Education">Образование</h3>
+                    <p data-bg="Завърших бакалавърска степен по Психология във Великотърновски университет 'Св. св. Кирил и Методий' през 2025 г." data-en="I graduated with a Bachelor's degree in Psychology from Veliko Tarnovo University in 2025.">Завърших бакалавърска степен по <strong>Психология</strong> във Великотърновски университет "Св. св. Кирил и Методий" през 2025 г.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-4 text-green-800" data-bg="Специализации" data-en="Specializations">Специализации</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li data-bg="Фасилитатор по семейни системни констелации: Преминах двугодишен курс към Фондация 'Фамилни констелации - България' (2022-2024)." data-en="Family Constellations Facilitator: Completed a two-year course at the 'Family Constellations - Bulgaria' Foundation (2022-2024)."><strong>Фасилитатор по семейни системни констелации:</strong> Преминах двугодишен курс към Фондация "Фамилни констелации - България" (2022-2024).</li>
+                        <li data-bg="Гещалт-консултант: Преминах двугодишен курс към 'Български Институт по Гещалт Терапия' (2023-2025)." data-en="Gestalt Consultant: Completed a two-year course at the Bulgarian Institute for Gestalt Therapy (2023-2025)."><strong>Гещалт-консултант:</strong> Преминах двугодишен курс за гещалт-консултант към "Български Институт по Гещалт Терапия" (2023-2025).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is Gestalt Section -->
+        <section id="what-is-gestalt" class="mb-16 md:mb-24 pt-8 scroll-offset">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-8 text-green-800" data-bg="Какво е Гещалт?" data-en="What is Gestalt?">Какво е Гещалт?</h2>
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-xl">
+                <p class="text-lg leading-relaxed mb-4" data-bg="Гещалт терапията е вид психотерапия, която се фокусира върху осъзнаването и преживяването в настоящия момент (тук и сега)." data-en="Gestalt therapy is a type of psychotherapy that focuses on awareness and experience in the present moment (here and now).">
+                    Гещалт терапията е вид психотерапия, която се фокусира върху <strong>осъзнаването</strong> и <strong>преживяването в настоящия момент</strong> (тук и сега). 
+                </p>
+                <p class="text-lg leading-relaxed mb-4" data-bg="Думата 'Гещалт' означава цялост, форма или модел. Основната идея е, че човек трябва да бъде разглеждан като едно цяло – тяло, ум и емоции." data-en="The word 'Gestalt' means wholeness, form, or pattern. The main idea is that a person should be viewed as a whole – body, mind, and emotions.">
+                    Думата "Гещалт" (Gestalt) е немска и означава <strong>цялост, форма или модел</strong>. Основната идея е, че човек трябва да бъде разглеждан като едно <strong>цяло</strong> – тяло, ум и емоции. 
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="mb-16 md:mb-24 pt-8 scroll-offset">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-8 text-green-800" data-bg="С какво мога да Ви бъда полезна?" data-en="How can I help you?">С какво мога да Ви бъда полезна?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-lg mb-2 text-green-800" data-bg="Тревожност и стрес" data-en="Anxiety and Stress">Тревожност и стрес</h4>
+                    <p class="text-sm text-gray-600" data-bg="Постоянно чувство на безпокойство, паник атаки или стрес." data-en="Constant feeling of anxiety, panic attacks, or stress.">Постоянно чувство на безпокойство, паник атаки или трудности със справянето със стреса.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-lg mb-2 text-green-800" data-bg="Бърнаут" data-en="Burnout">Бърнаут</h4>
+                    <p class="text-sm text-gray-600" data-bg="Изтощение и липса на мотивация, свързани с работата." data-en="Exhaustion and lack of motivation related to work.">Чувство на изтощение, липса на мотивация и претоварване, свързани с работата.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-lg mb-2 text-green-800" data-bg="Взаимоотношения" data-en="Relationships">Взаимоотношения</h4>
+                    <p class="text-sm text-gray-600" data-bg="Конфликти или усещане за неразбиране в семейството или на работа." data-en="Conflicts or feelings of misunderstanding in family or at work.">Конфликти, трудности в общуването или усещане за неразбиране.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles" class="mb-16 md:mb-24 pt-8 scroll-offset">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-8 text-green-800" data-bg="Статии" data-en="Articles">Статии</h2>
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-xl text-center">
+                <p class="text-xl text-gray-600 mb-4" data-bg="В тази секция скоро ще намерите авторски статии." data-en="In this section, you will soon find original articles.">В тази секция скоро ще намерите авторски статии по теми, свързани с моята практика.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                    <div class="p-4 border border-dashed border-pink-300 rounded-lg text-sm text-gray-500" data-bg="Тема 1: Първи стъпки при тревожност" data-en="Topic 1: First steps in anxiety">Тема 1: Първи стъпки при тревожност</div>
+                    <div class="p-4 border border-dashed border-pink-300 rounded-lg text-sm text-gray-500" data-bg="Тема 2: Как да разпознаем бърнаута" data-en="Topic 2: How to recognize burnout">Тема 2: Как да разпознаем бърнаута</div>
+                    <div class="p-4 border border-dashed border-pink-300 rounded-lg text-sm text-gray-500" data-bg="Тема 3: Граници във взаимоотношенията" data-en="Topic 3: Boundaries in relationships">Тема 3: Граници във взаимоотношенията</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-card p-8 md:p-12 rounded-lg shadow-lg scroll-offset md:flex md:items-center md:justify-between">
+            <div class="md:w-1/2 md:text-left">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4 text-green-800" data-bg="Как да започнем?" data-en="How to start?">Как да започнем?</h2>
+                <p class="text-lg text-gray-600 mb-6" data-bg="За да си запазите час, можете да се свържете с мен на:" data-en="To book an appointment, you can contact me at:">За да си запазите час или да обсъдим как мога да Ви бъда полезна, свържете се с мен:</p>
+                <p class="text-xl md:text-2xl font-bold mb-2">+359 883 397 126</p>
+                <p class="text-xl md:text-2xl font-bold mb-6">teodora.k.marinova@gmail.com</p>
+                <p class="text-lg text-gray-600" data-bg="гр. София, ж.к. 'Красно село'" data-en="Sofia, Krasno Selo">гр. София, ж.к. "Красно село"</p>
+            </div>
+            <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
+                <img src="ii.jpg" class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-2xl border-4 border-white">
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-green-900 text-gray-200 py-6 text-center">
+        <p class="text-sm">&copy; 2026 Теодора Маринова. <span data-bg="Всички права запазени." data-en="All rights reserved.">Всички права запазени.</span></p>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-bg]').forEach(el => {
+                const translation = el.getAttribute('data-' + lang);
+                if (translation) {
+                    el.innerHTML = translation;
+                }
+            });
+            document.getElementById('btn-bg').classList.toggle('active', lang === 'bg');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        window.onload = () => {
+            const savedLang = localStorage.getItem('preferredLang') || 'bg';
+            setLanguage(savedLang);
+        };
+    </script>
+</body>
+</html>
